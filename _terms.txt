@@ -1,7 +1,144 @@
 Abstract Class
 An partial or incomplete class that can impelement some, 
 but not all methods defined in the interface. An abstract class
-cannot be instantiated, since it is incomplete.
+cannot be instantiated, since it is incomplete. It can be thought of, informally, as an 
+interface that allows you to provide implementations for some methods.
+
+Abstraction Function
+How to interpret the instance variables to obtain the abstract value for any given state. It is 
+the function that explains how the concrete value <em>corresponds</em> to the abstract value.
+This function is outlined in the @correspondence class javadoc tag.
+
+Abstract Transition
+For any variable's state before a method call, describes where it might end up according to the 
+method's contract. Represented by the horizontal arrow between the abstract state spaces of the 
+commutative diagram.
+
+Instance Variable
+A variable that is declared within a class, but outside any method body. It is unique to each 
+new instance of the class (unique to each object). To maintain encapsulation, instance variables
+are typically set to private with setter and getter methods for access. The instance variables 
+of an object are essentially what makes them unique among other objects of the same type during
+runtime.
+
+Size of a tree
+The total number of nodes in the tree, denoted by |t|.
+
+Concrete Transition
+For a variable's state before a method call, describes where it might end up according to the 
+code in the method's body. Describes how the method body changes variables  in the concrete state 
+space from before the call, to their value after the method has terminated.
+
+hashCode()
+Instance method that should return an int value that is unique to each different instance of a 
+class, and should return the same int value for equal objects.
+
+Client View
+The information available to the caller of the method. The client view can only see what a component
+does, not how it does it.
+
+Two-Level Thinking
+The practice of restricting your thinking to only the 2 adjacent levels in the tower of abstraction;
+Directly above and directly below.
+
+Constant Time
+Duration of an operation that does not depend on the size or elements within a component. The operation
+always takes the same time to complete.
+
+One-Step Thinking
+The practice of restricting your attention to the states just before and just after a method call.
+
+Mathematical Type
+A mathematical model that describes any given program type.
+
+Object Superclass
+Every object in the java language extends class Object by default. Among many others, this class 
+provides default (often incorrect) implementations for equals(), hashCode(), and toString() methods.
+
+Pre-Order Traversal
+Traversing the nodes in a binary tree in such a fashion as to visit the root before visiting the 
+left, then the right.
+
+Interpretation
+Describes how the value in the concrete state space becomes the value in the abstract state
+space. Represented by the upward arrow from the concrete state space to the abstract state space.
+
+
+Post-Order Traversal
+Traversing the nodes in a binary tree in such a fashion as to visit the root after the left 
+and the right.
+
+Secondary Classes
+An abstract class used to provide implementations for methods that will be common to all
+subclasses of the different implementations of a component. Also provides correct 
+implementations of the equals(), hashCode(), and toString methods defined in the 
+Object Superclass.
+
+Binary Search Tree
+A binary tree with the properties that, for all subtrees within a tree, the root's left node is
+less than the root, and the right node is greater than the root.
 
 Abstract State Space
-Space of abstractness
+The set of all possible mathematical model values as seen by the client. It represents the data
+that the client has access to, and how the client sees the data.
+
+Implementer View
+The data available to the implementer of a method. Unlike the client, the implementer can see
+how the component functions.
+
+Total Preorder
+A binary relation on T that Total, Reflexive, and Transitive. In essence, this refers to an 
+ordering in which all of the elements have a place in the order and the order increases in only
+one direction, and each element can be considered in order with itself.
+
+Total
+Every element in a set is related.
+
+Reflexive
+Every element in a set is related to itself.
+
+Transitive
+if a <= b, and b <= c, then a <= c
+
+Vacuously True
+Assertion that the empty set satisfies a certain property or condition
+
+Concrete State Space
+The set of all possible mathematical model values of the data representation. It describes the 
+implementer view and is represented by the bottom oval of the commutative diagram.
+
+In-Order Traversal
+Traversing a binary tree in such a fashion as to visit the root between visiting the left and 
+right subtree.
+
+Total Function
+Every input has exactly 1 output, and every input produces the same output every time. hashCode()
+is an example of a total function.
+
+Linear Search
+An algorithm that checks every item in a collection until it finds the one it is searching for.
+
+Binary Tree
+A tree which satisfies the property that for any node in the tree, it has at most 2 subtrees.
+
+Height of a Tree
+The number of nodes on the longest path from the root node to a leaf. Denoted by ht(t).
+
+Representation Invariant
+Describes which configurations of instance variables are considered to be legal. Represented 
+in the class javadoc tag @convention. It must be true after the constructor terminates and at 
+the end of every method call. 
+
+Data Representation
+A type or data structure that serves as the underlying structure for another type and is only 
+accessed by the implementer.
+
+Traversal Order
+The order given to a tree referring to the order in which you traverse the tree, and at what 
+point you visit the root. The three examples used are Pre-Order Traversal, In-Order Traversal, 
+and Post-Order Traversal.
+
+Kernel Purity Rule
+No public method can call another public method in the same class or any subclass. No public 
+method in the kernel class can use recursion. 
+
