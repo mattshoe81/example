@@ -1,0 +1,6 @@
+Abstract Class
+An partial or incomplete class that can impelement some, 
+but not all methods defined in the interface. An abstract class
+cannot be instantiated, since it is incomplete.
+
+Abstract State Space
