@@ -4,3 +4,4 @@ but not all methods defined in the interface. An abstract class
 cannot be instantiated, since it is incomplete.
 
 Abstract State Space
+Space of abstractness
