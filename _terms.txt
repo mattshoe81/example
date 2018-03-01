@@ -63,7 +63,6 @@ Interpretation
 Describes how the value in the concrete state space becomes the value in the abstract state
 space. Represented by the upward arrow from the concrete state space to the abstract state space.
 
-
 Post-Order Traversal
 Traversing the nodes in a binary tree in such a fashion as to visit the root after the left 
 and the right.
@@ -141,4 +140,3 @@ and Post-Order Traversal.
 Kernel Purity Rule
 No public method can call another public method in the same class or any subclass. No public 
 method in the kernel class can use recursion. 
-
