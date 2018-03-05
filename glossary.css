@@ -4,6 +4,11 @@ body {
     color:                         #455672; 
 }
 
+.alphabeticLinks {
+    text-align:                    center;
+    font-size:                     125%;
+}
+
 .content {
     background:                    #fffff0;
     width:                         85%;
@@ -43,7 +48,7 @@ li {
 }
 
 .indexTerm {
-    padding-top:                   5px;
+    padding-top:                   10px;
 }
 
 .term {
