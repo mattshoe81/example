@@ -1,12 +1,12 @@
 Abstract Class
 An partial or incomplete class that can impelement some, 
-but not all methods defined in the interface. An abstract class
+but not all methods defined in the interface. An abstract class 
 cannot be instantiated, since it is incomplete. It can be thought of, informally, as an 
 interface that allows you to provide implementations for some methods.
 
 Abstraction Function
 How to interpret the instance variables to obtain the abstract value for any given state. It is 
-the function that explains how the concrete value <em>corresponds</em> to the abstract value.
+the function that explains how the concrete value <em>corresponds</em> to the abstract value. 
 This function is outlined in the @correspondence class javadoc tag.
 
 Abstract Transition
@@ -16,9 +16,9 @@ commutative diagram.
 
 Instance Variable
 A variable that is declared within a class, but outside any method body. It is unique to each 
-new instance of the class (unique to each object). To maintain encapsulation, instance variables
+new instance of the class (unique to each object). To maintain encapsulation, instance variables 
 are typically set to private with setter and getter methods for access. The instance variables 
-of an object are essentially what makes them unique among other objects of the same type during
+of an object are essentially what makes them unique among other objects of the same type during 
 runtime.
 
 Size of a tree
@@ -34,15 +34,15 @@ Instance method that should return an int value that is unique to each different
 class, and should return the same int value for equal objects.
 
 Client View
-The information available to the caller of the method. The client view can only see what a component
+The information available to the caller of the method. The client view can only see what a component 
 does, not how it does it.
 
 Two-Level Thinking
-The practice of restricting your thinking to only the 2 adjacent levels in the tower of abstraction;
+The practice of restricting your thinking to only the 2 adjacent levels in the tower of abstraction; 
 Directly above and directly below.
 
 Constant Time
-Duration of an operation that does not depend on the size or elements within a component. The operation
+Duration of an operation that does not depend on the size or elements within a component. The operation 
 always takes the same time to complete.
 
 One-Step Thinking
@@ -60,8 +60,9 @@ Traversing the nodes in a binary tree in such a fashion as to visit the root bef
 left, then the right.
 
 Interpretation
-Describes how the value in the concrete state space becomes the value in the abstract state
+Describes how the value in the concrete state space becomes the value in the abstract state 
 space. Represented by the upward arrow from the concrete state space to the abstract state space.
+
 
 Post-Order Traversal
 Traversing the nodes in a binary tree in such a fashion as to visit the root after the left 
@@ -74,20 +75,20 @@ implementations of the equals(), hashCode(), and toString methods defined in the
 Object Superclass.
 
 Binary Search Tree
-A binary tree with the properties that, for all subtrees within a tree, the root's left node is
+A binary tree with the properties that, for all subtrees within a tree, the root's left node is 
 less than the root, and the right node is greater than the root.
 
 Abstract State Space
-The set of all possible mathematical model values as seen by the client. It represents the data
+The set of all possible mathematical model values as seen by the client. It represents the data 
 that the client has access to, and how the client sees the data.
 
 Implementer View
-The data available to the implementer of a method. Unlike the client, the implementer can see
+The data available to the implementer of a method. Unlike the client, the implementer can see 
 how the component functions.
 
 Total Preorder
 A binary relation on T that Total, Reflexive, and Transitive. In essence, this refers to an 
-ordering in which all of the elements have a place in the order and the order increases in only
+ordering in which all of the elements have a place in the order and the order increases in only 
 one direction, and each element can be considered in order with itself.
 
 Total
@@ -111,7 +112,7 @@ Traversing a binary tree in such a fashion as to visit the root between visiting
 right subtree.
 
 Total Function
-Every input has exactly 1 output, and every input produces the same output every time. hashCode()
+Every input has exactly 1 output, and every input produces the same output every time. hashCode() 
 is an example of a total function.
 
 Linear Search
@@ -140,3 +141,66 @@ and Post-Order Traversal.
 Kernel Purity Rule
 No public method can call another public method in the same class or any subclass. No public 
 method in the kernel class can use recursion. 
+
+Heap
+A Complete Binary Tree in which the root node of every subtree is in order (is smaller than) 
+both of its children. A heap is represented using an array during runtime, which makes use of 
+array's constant time access to any element in it.
+
+Complete Binary Tree
+A binary tree in which every level of the tree is completely filled, except for those at the 
+bottom level of the tree, and those nodes are as far left as they can be.
+
+Collection Type
+Any type whose abstract mathematical model involves a string or set or multiset.
+
+Fixed Size
+The size or length of a collection is immutable, or never changes. An array has fixed size. 
+
+Dynamic Size
+The size or length of a collection grows or shrinks as needed. Its size or length is not 
+constrained (other than by memory). 
+
+Direct Access
+The entries in a collection may be accessed by specifying an index value. 
+
+Random Access
+Synonymous with Direct Access. 
+
+Sequential Access
+The entries of a collection must be accessed in a predetermined order. Essentially, you must 
+iterate over the collection until you find the one you are looking for. 
+
+Reference
+Memory location where an object (instance of a class) is stored.
+
+Singly-Linked List
+Data structure that provides sequential access is provided to its elements through the use 
+of sequentially linked nodes that store a piece of data (the contents of the list at that 
+position) and a reference to the next node in the list.
+
+Nested Class
+A class that is declared within another class. This gives the nested class access to the 
+private instance variables of its parent class.
+
+Smart Node
+Usually referred to as Dummy Node or Sentinel Node, these are used in linked lists to make 
+code easier to write by reducing the number of special cases that must be accounted for 
+in the implementation.
+
+Doubly-Linked List
+Data structure that is essentially the same as a singly-linked list, but stores a reference 
+to the previous node in the list in addition to the reference to the next.
+
+Dynamic Type
+The type of an object during runtime.
+
+Declared Type
+The type of an object according to the compiler.
+
+Abstract Syntax Tree
+A tree model of an entire protram or a certain "program structure".
+
+enum
+A java construct that allows you to define constant values without the need to assign an
+arbitrary value to them.
