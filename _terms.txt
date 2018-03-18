@@ -199,8 +199,12 @@ Declared Type
 The type of an object according to the compiler.
 
 Abstract Syntax Tree
-A tree model of an entire protram or a certain "program structure".
+A tree model of an entire program or a certain "program structure".
 
 enum
 A java construct that allows you to define constant values without the need to assign an
 arbitrary value to them.
+
+Refactor
+The action of restructuring code, usually to improve readability and organization, without 
+affecting the behavior of the code.
